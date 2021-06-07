@@ -64,23 +64,6 @@
             
           </div>
 
-<div class="d-flex flex-row">
-
-    
-    <?php $x = 1 ?>
-        @foreach ($habit->days as $day)
-        <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
-            @csrf
-            @method('PATCH')
-            {{ $x }}
-            <?php ++$x ?>
-            <input onclick="this.form.submit()" type="checkbox" name="done" {{$day->done ? 'checked' : ''}}>
-        </form>
-        
-
-        @endforeach
-    </div>
-
     
 <div class=" themytable">
 
@@ -106,7 +89,10 @@
             $w5 = 0;
             $w6 = 0;
             
+
             ?>
+            
+
                     @foreach($habit->days as $day)
                     @if($loop->iteration >= 1 && $loop->iteration <= 7)
                     <td>
@@ -124,7 +110,7 @@
                     @endforeach
                     <td>{{ $w1 }}</td>
                 </tr>
-                
+{{--                 
                 <tr  class="bg-warning">
                     <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الثاني</td>
                     <td>8</td>
@@ -294,7 +280,7 @@
                 <td class=bg-success>:</td>
                 <td class="bg-success" colspan="4">{{ $result }}</td>
             </tr>
-            
+             --}} --}}
         </table> 
     </div>
 
