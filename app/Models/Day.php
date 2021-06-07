@@ -10,7 +10,6 @@ class Day extends Model
     use HasFactory;
     protected $fillable = [
         'done',
-        'none',
         'habit_id'
     ];
     public function habit()

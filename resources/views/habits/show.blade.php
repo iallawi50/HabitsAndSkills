@@ -64,7 +64,7 @@
             
           </div>
 
-{{-- <div class="d-flex flex-row">
+<div class="d-flex flex-row">
 
     
     <?php $x = 1 ?>
@@ -79,7 +79,7 @@
         
 
         @endforeach
-    </div> --}}
+    </div>
 
     
 <div class=" themytable">
@@ -108,7 +108,7 @@
             
             ?>
                     @foreach($habit->days as $day)
-                    @if($loop->iteration > 0 && $loop->iteration < 8)
+                    @if($loop->iteration >= 1 && $loop->iteration <= 7)
                     <td>
                         <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                             @csrf
@@ -138,7 +138,7 @@
             </tr>
             
             @foreach($habit->days as $day)
-            @if($loop->iteration > 7 && $loop->iteration < 15)
+            @if($loop->iteration >= 8 && $loop->iteration <= 14)
             <td>
                 <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                     @csrf
@@ -170,7 +170,7 @@
         </tr>
         
             @foreach($habit->days as $day)
-            @if($loop->iteration > 14 && $loop->iteration < 22)
+            @if($loop->iteration >= 15 && $loop->iteration <= 21)
                  <td>
                      <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                         @csrf
@@ -202,7 +202,7 @@
             </tr>
             
             @foreach($habit->days as $day)
-            @if($loop->iteration > 21 && $loop->iteration < 29)
+            @if($loop->iteration >= 22 && $loop->iteration <= 28)
             <td>
                 <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                     @csrf
@@ -234,7 +234,7 @@
         </tr>
         
         @foreach($habit->days as $day)
-        @if($loop->iteration > 28 && $loop->iteration < 36)
+        @if($loop->iteration >= 29 && $loop->iteration <= 35)
         <td>
             <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                 @csrf
@@ -266,7 +266,7 @@
             </tr>
             
             @foreach($habit->days as $day)
-            @if($loop->iteration > 35 && $loop->iteration < 45)
+            @if($loop->iteration >= 36 && $loop->iteration <= 40)
             <td>
                 <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
                     @csrf
