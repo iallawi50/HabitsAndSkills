@@ -110,7 +110,7 @@
                     @endforeach
                     <td>{{ $w1 }}</td>
                 </tr>
-{{--                 
+                
                 <tr  class="bg-warning">
                     <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الثاني</td>
                     <td>8</td>
@@ -280,7 +280,7 @@
                 <td class=bg-success>:</td>
                 <td class="bg-success" colspan="4">{{ $result }}</td>
             </tr>
-             --}} --}}
+            
         </table> 
     </div>
 
