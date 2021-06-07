@@ -142,7 +142,7 @@
             <td>{{ $w2 }}</td>
         </tr>
         
-        
+         
         <tr  class="bg-warning">
             <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الثالث</td>
             <td>15</td>
@@ -280,7 +280,7 @@
                 <td class=bg-success>:</td>
                 <td class="bg-success" colspan="4">{{ $result }}</td>
             </tr>
-            
+         
         </table> 
     </div>
 
