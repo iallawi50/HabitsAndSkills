@@ -23,6 +23,6 @@ class Habit extends Model
 
     public function days()
     {
-        return $this->hasMany(day::class);
+        return $this->hasMany(Day::class);
     }
 }
