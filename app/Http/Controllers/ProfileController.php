@@ -22,7 +22,7 @@ class ProfileController extends Controller
         $userId = auth()->id();
         $data = request()->validate([
             'name' => ['required', 'min:3'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255'],
             'password' => ['nullable', 'confirmed' ,'min:8'],
         ]);
 

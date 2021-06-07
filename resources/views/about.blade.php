@@ -50,9 +50,25 @@
             </p>
         </div>
     </div>
+
+    @guest
+        
     
-
-
+    <div class="d-flex d-flex-inline justify-content-center">
+        
+        
+        <div class="form-group ml-4 btn-group btn-group-lg">
+            <a class="btn btn-success text-font rounded-0" href="/register">تسجيل دخول</a>
+        </div>
+        
+        <div class="form-group ml-4 btn-group-lg">
+            <a class="btn btn-success text-font rounded-0" href="/register">تسجيل جديد</a>
+        </div>
+        
+    </div>
+    
+    
+    @endguest
 
 
 
