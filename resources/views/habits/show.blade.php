@@ -90,18 +90,8 @@
             $w6 = 0;
             
 
-            echo $habit->days
+        
             ?>
-            
-            @foreach ($habit->days as $day)
-            {{ $day->id }}
-            <form class="float-start" action="/habits/{{$habit->id}}/days/{{$day->id}}" method="POST" class="d-flex flex-row">
-                @csrf
-                @method('PATCH')
-                <input onclick="this.form.submit()" type="checkbox" name="done" {{$day->done ? 'checked' : ''}}>
-            </form>
-            @endforeach
-
                     @foreach($habit->days as $day)
                     @if($loop->iteration >= 1 && $loop->iteration <= 7)
                     <td>
