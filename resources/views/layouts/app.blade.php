@@ -8,6 +8,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'عاداتي ومهاراتي') }}</title>
+    <meta name="description" 
+    content="موقع يساعدك على اكتساب العادات والمهارات المفيدة والتخلص من العادات السيئة في 40 يوماً">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
