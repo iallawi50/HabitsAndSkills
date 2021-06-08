@@ -90,6 +90,7 @@
             $w6 = 0;
             
 
+            echo $habit->days
             ?>
             
             @foreach ($habit->days as $day)

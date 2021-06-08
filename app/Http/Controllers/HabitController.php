@@ -70,6 +70,7 @@ class HabitController extends Controller
     public function show(Habit $habit)
     {
         abort_if(auth()->user()->id !== $habit->user_id, redirect('habits')->with(['alert' => 'غير مصرح لك بالدخول الى عادات/مهارات الآخرين']));
+       $habit = $habit->sortBy('id');
         return view('habits.show', compact('habit'));
     }
 
