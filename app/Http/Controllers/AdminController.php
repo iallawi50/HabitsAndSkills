@@ -15,7 +15,7 @@ class AdminController extends Controller
     }
     public function index()
     {
-        $users = User::class::get();
+        $users = User::class::latest()->get();
 
         abort_if(auth()->user()->email !== 'aahh50018@gmail.com', redirect('habits')->with(['alert' => 'غير مصرح لك بالدخول']));
         return view('dbadmin.index', compact('users'));
