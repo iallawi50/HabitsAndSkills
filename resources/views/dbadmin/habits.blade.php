@@ -49,7 +49,7 @@ direction: rtl;
                 ">مدى الأهمية : {{ $habit->important }}</small><br>
                 <small class="text-primary">تأثيرها على الجانب : {{ $habit->effect }}</small>
                 <br>
-                <small class="text-dark">هذي العادة تنتمي للمستخدم رقم :
+                <small class="text-dark">هذي العادة تنتمي للمستخدم :
     @foreach ($users as $user)
                     @if ($habit->user_id == $user->id)
                         {{$user->name}}
