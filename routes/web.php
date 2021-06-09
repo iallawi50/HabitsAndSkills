@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DayController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HabitController;
@@ -29,13 +30,10 @@ Route::patch('/habits/{habit}/days/{day}', [DayController::class, 'update']);
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::patch('/profile', [ProfileController::class, 'update']);
 
-Route::get('/dbadmin/show/users/', function () {
-    $users = User::class::get();
+// Admin Page
 
-    abort_if(auth()->user()->email !== 'aahh50018@gmail.com', redirect('projects')->with(['alert' => 'غير مصرح لك بالدخول']));
-    return view('dbadmin.index', compact('users'));
-
-})->middleware('auth');
+Route::get('/dbadmin/show/users/', [AdminController::class, 'index']);
+Route::get('/dbadmin/show/habits/', [AdminController::class, 'allHabits']);
 
 Route::get('/{id}', function ($id) {return view('about');}); // if url not found return to about
 

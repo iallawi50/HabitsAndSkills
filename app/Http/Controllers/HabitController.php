@@ -84,7 +84,8 @@ class HabitController extends Controller
      */
     public function edit(Habit $habit)
     {
-        abort_if(auth()->user()->id !== $habit->user_id, redirect('habits')->with(['alert' => 'غير مصرح لك بالتعديل على عادات/مهارات الآخرين']));
+        abort_if(auth()->user()->id !== $habit->user_id, redirect('habits')->with
+        (['alert' => 'غير مصرح لك بالتعديل على عادات/مهارات الآخرين']));
         return view('habits.edit', compact('habit'));
     }
 
