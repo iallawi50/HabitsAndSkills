@@ -34,6 +34,7 @@ Route::patch('/profile', [ProfileController::class, 'update']);
 
 Route::get('/dbadmin/show/users/', [AdminController::class, 'index']);
 Route::get('/dbadmin/show/habits/', [AdminController::class, 'allHabits']);
+Route::get('/dbadmin/show/habits/{id}', [AdminController::class, 'show']);
 
 Route::get('/{id}', function ($id) {return view('about');}); // if url not found return to about
 

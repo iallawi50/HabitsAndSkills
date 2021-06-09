@@ -25,7 +25,7 @@ direction: rtl;
             </a>
             
             
-        </div>
+</div>
 <table class="table text-center">
     <thead class="bg-warning">
         <tr>
