@@ -24,7 +24,7 @@
     </div>
 
 
-    <div class="card text-white bg-danger mb-3">
+    <div class="card text-dark bg-warning mb-3">
         <div class="card-header text-center">الهدف</div>
         <div class="card-body">
             <p class="card-text">هذه الموقع سيساعدك على المواظبة على أداة العمل المطلوب لمدة 40 يوماً حتى تكتسب العادة\المهارة المطلوبة</p>
