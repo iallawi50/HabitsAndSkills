@@ -39,7 +39,17 @@
                             </div>
                         </div>
 
-
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    
+                                    <input class="form-check-input ml-4" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                    <label class="form-check-label mr-3" for="remember">
+                                        {{ __('تذكرني') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0 m-auto">
                             <div class="col-md-8 align-items-center offset-md-4">
