@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card text-right">
                 <div class="card-header text-center bg-warning">{{ __('إنشاء حساب جديد') }}</div>
 
                 <div class="card-body">

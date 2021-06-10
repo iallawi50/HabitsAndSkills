@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card text-right">
                 <div class="card-header text-center bg-warning">{{ __('تسجيل الدخول') }}</div>
 
                 <div class="card-body">

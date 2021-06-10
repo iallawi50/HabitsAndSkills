@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+.themytable {
+            overflow: auto;
+        }
+</style>
 <div class="d-flex mb-3">
 
     
@@ -26,24 +32,27 @@ direction: rtl;
             
             
 </div>
-<table class="table text-center">
-    <thead class="bg-warning">
-        <tr>
-            <th>Habits</th>
-            <th>E-Mail</th>
-            <th>name</th>
-            <th>ID</th>
-        </tr>
-    </thead>
-    <tbody dir="rtl">
-        @foreach ($users as $user) 
-        <tr class="bg-dark text-white">
-            <td>{{ count($user->habits)}}</td>
-            <td>{{ $user->email}}</td>
-            <td>{{$user->name}}</td>
-            <th>{{ $user->id }}</th>
-        </tr>
-        @endforeach
-    </tbody>
-</table>
-@endsection
+<div class="themytable">
+
+    <table class="table text-center">
+        <thead class="bg-warning">
+            <tr>
+                <th>Habits</th>
+                <th>E-Mail</th>
+                <th>name</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody dir="rtl">
+            @foreach ($users as $user) 
+            <tr class="bg-dark text-white">
+                <td>{{ count($user->habits)}}</td>
+                <td>{{ $user->email}}</td>
+                <td>{{$user->name}}</td>
+                <th>{{ $user->id }}</th>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+    @endsection
