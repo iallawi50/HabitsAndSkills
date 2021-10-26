@@ -41,12 +41,12 @@
             <p class="card-text text-info text-center" dir="ltr">
                 <a class="text-info" target="_blank" href="https://instagram.com/iallawi50/"> <small>@iallawi50</small></a>
                 |    
-                <a class="text-info" target="_blank" href="https://instagram.com/Cast.Media/"> <small>@Cast.Media</small></a>
+                {{-- <a class="text-info" target="_blank" href="https://instagram.com/Cast.Media/"> <small>@Cast.Media</small></a> --}}
                 |    
-                <a class="text-info" target="_blank" href="https://instagram.com/iMartenDev/"> <small>@iMartenDev</small></a>  
+                <a class="text-info" target="_blank" href="https://instagram.com/Dev_Marten/"> <small>@Dev_Marten</small></a>  
             </p>
             <p class="card-text text-success text-center" dir="ltr">
-            <a class="text-success" target="_blank" href="https://wa.me/966565595718">+966 565595718</a>
+            {{-- <a class="text-success" target="_blank" href="https://wa.me/966565595718">+966 565595718</a> --}}
             </p>
         </div>
     </div>
