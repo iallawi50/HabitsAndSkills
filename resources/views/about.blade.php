@@ -25,7 +25,7 @@
 
 
     <div class="card text-dark bg-warning mb-3">
-        <div class="card-header text-center">الهدف</div>
+        <div class="card-header text-dark text-center">الهدف</div>
         <div class="card-body">
             <p class="card-text">هذه الموقع سيساعدك على المواظبة على أداة العمل المطلوب لمدة 40 يوماً حتى تكتسب العادة\المهارة المطلوبة</p>
             <p class="card-text"> وفي العشرة أيام الاخيرة من الأربعين يجب عليك أن تجبر نفسك على القيام بأداة العمل مهما كانت الظروف</p>
@@ -35,14 +35,11 @@
     </div>
     
     <div class="card text-white bg-dark mb-3">
-        <div class="card-header text-light text-center">برمجة وتصميم</div>
+        <div class="card-header text-light text-center">برمجة</div>
         <div class="card-body">
-            <h5 class="card-title text-center">علي العبدالله</h5>
+            <a class="card-title text-center text-primary" href="https://ali-al-abdullah.netlify.app"><h5 class="">علي العبدالله</h5></a>
             <p class="card-text text-info text-center" dir="ltr">
-                <a class="text-info" target="_blank" href="https://instagram.com/iallawi50/"> <small>@iallawi50</small></a>
-                |    
                 {{-- <a class="text-info" target="_blank" href="https://instagram.com/Cast.Media/"> <small>@Cast.Media</small></a> --}}
-                |    
                 <a class="text-info" target="_blank" href="https://instagram.com/Dev_Marten/"> <small>@Dev_Marten</small></a>  
             </p>
             <p class="card-text text-success text-center" dir="ltr">
@@ -70,7 +67,10 @@
     
     @endguest
 
-
+<br>
+<hr>
+<br><br>
+<p class="text-danger font-weight-bold  text-center">هذا الموقع تحت التطوير</p>
 
 </div>
     

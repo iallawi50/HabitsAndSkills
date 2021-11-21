@@ -42,7 +42,7 @@
 
         .card, .card-header {
             font-family: 'Changa', sans-serif;
-            color: black
+            color: white
         }
 
     </style>
@@ -50,7 +50,7 @@
 
 <body>
     <div id="app" dir="rtl">
-        <nav class="navbar navbar-expand-md navbar-light bg-warning shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-purple shadow-sm">
             <div class="container">
                 <a class="navbar-brand header-font font-weight-bold" style="" href="/home">
                     {{ config('app.name', 'عاداتي ومهاراتي') }}

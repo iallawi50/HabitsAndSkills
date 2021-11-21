@@ -35,11 +35,25 @@
 
     <a href="/habits/{{ $habit->id }}">
         
-        <div class="card text-center bg-warning mb-3">
-            <div class="card-body">
+        <div class="card text-center bg-purple mb-3">
+            <div class="card-body text-white">
               <h1 class="card-text">{{ $habit->title }}</h1>
-              <small class="text-danger">مدى الأهمية : {{ $habit->important }}</small><br>
-              <small class="text-success">تأثيرها على الجانب : {{ $habit->effect }}</small>
+             
+              <small class="
+              @switch($habit->important)
+@case('مهم جدا')
+    text-important
+    @break
+@case('عادي الأهمية')
+    text-success
+    @break
+    
+@endswitch
+              
+              ">مدى الأهمية : {{ $habit->important }}</small>
+              
+              <br>
+              <small class="text-primary">تأثيرها على الجانب : {{ $habit->effect }}</small>
             </div>
         </a>
 
@@ -69,8 +83,8 @@
 
 
     <table class="table text-center text-font">
-        <tr  class="bg-warning">
-            <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الاول</td>
+        <tr  class="bg-purple text-white">
+            <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع الاول</td>
             <td>1</td>
             <td>2</td>
             <td>3</td>
@@ -110,8 +124,8 @@
                     <td>{{ $w1 }}</td>
                 </tr>
                 
-                <tr  class="bg-warning">
-                    <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الثاني</td>
+                <tr  class="bg-purple text-white">
+                    <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع الثاني</td>
                     <td>8</td>
                     <td>9</td>
                 <td>10</td>
@@ -142,8 +156,8 @@
         </tr>
         
          
-        <tr  class="bg-warning">
-            <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الثالث</td>
+        <tr  class="bg-purple text-white">
+            <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع الثالث</td>
             <td>15</td>
             <td>16</td>
             <td>17</td>
@@ -174,8 +188,8 @@
             </tr>
             
             
-            <tr  class="bg-warning">
-                <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الرابع</td>
+            <tr  class="bg-purple text-white">
+                <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع الرابع</td>
                 <td>22</td>
                 <td>23</td>
                 <td>24</td>
@@ -206,8 +220,8 @@
         </tr>
         
         
-        <tr  class="bg-warning">
-            <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع الخامس</td>
+        <tr  class="bg-purple text-white">
+            <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع الخامس</td>
             <td>29</td>
             <td>30</td>
             <td>31</td>
@@ -238,16 +252,16 @@
         </tr>
         
         <tr>
-            <td rowspan="2" class="bg-warning mt-3" style="vertical-align: middle;">الاسبوع السادس</td>
-            <td class="bg-warning">36</td>
-            <td class="bg-warning">37</td>
-                <td class="bg-warning">38</td>
-                <td class="bg-warning">39</td>
-                <td class="bg-warning">40</td>
+            <td rowspan="2" class="bg-purple text-white mt-3" style="vertical-align: middle;">الاسبوع السادس</td>
+            <td class="bg-purple text-white">36</td>
+            <td class="bg-purple text-white">37</td>
+                <td class="bg-purple text-white">38</td>
+                <td class="bg-purple text-white">39</td>
+                <td class="bg-purple text-white">40</td>
                 <td></td>
                 <td></td>
                 
-                <td class="bg-warning"> النقاط</td>
+                <td class="bg-purple text-white"> النقاط</td>
             </tr>
             
             @foreach($habit->days as $day)

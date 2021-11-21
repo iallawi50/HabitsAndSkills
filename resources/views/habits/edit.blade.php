@@ -6,7 +6,7 @@
     <div class="col-12 mx-auto">
 
             
-        <div class="card text-center bg-warning mb-3">
+        <div class="card text-center bg-purple text-white mb-3">
             <div class="card-body">
                 <form action="/habits/{{ $habit->id }}" method="POST" class="col-8 mx-auto text-right">
     

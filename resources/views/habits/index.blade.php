@@ -13,7 +13,7 @@
     </div>
 
     <div>
-        <a href="/habits/create" class="btn btn-warning px-4" role="button">عادة / مهارة جديد</a>
+        <a href="/habits/create" class="btn btn-purple text-white px-4" role="button">عادة / مهارة جديد</a>
     </div>
 </header>
 
@@ -26,13 +26,13 @@
 
         <a href="/habits/{{ $habit->id }}">
             
-            <div class="card text-center bg-warning mb-3">
+            <div class="card text-center bg-purple mb-3">
                 <div class="card-body">
-                  <h1 class="card-text">{{ $habit->title }}</h1>
+                  <h1 class="card-text text-white">{{ $habit->title }}</h1>
                   <small class="
                   @switch($habit->important)
     @case('مهم جدا')
-        text-danger
+        text-important
         @break
     @case('عادي الأهمية')
         text-success
@@ -56,7 +56,7 @@
  <div class="m-auto align-content-center text-center text-font">
     <h3>لوحة العمل خالية من العادات والمهارات</h3>
     <p class="mt-5">
-        <a href="/habits/create" class="btn btn-warning btn-lg d-inline-flex align-items-center" role="button">أنشئ عادة جديدة الآن</a>
+        <a href="/habits/create" class="btn btn-purple text-white btn-lg d-inline-flex align-items-center" role="button">أنشئ عادة جديدة الآن</a>
     </p>
 </div>
 
